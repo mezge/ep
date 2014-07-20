@@ -1,0 +1,9 @@
+grammar hu.mezge.ep.Editor with org.eclipse.xtext.common.Terminals
+
+generate editor "http://www.mezge.hu/ep/Editor"
+
+Model:
+	greetings+=Greeting*;
+	
+Greeting:
+	'Hello' name=ID '!';
